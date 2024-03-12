@@ -1,6 +1,6 @@
 {
   "name": "react-native-biometric-next",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "biometric",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
