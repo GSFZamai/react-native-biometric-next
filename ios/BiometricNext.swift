@@ -46,7 +46,11 @@ class BiometricNext: NSObject {
     }
     
     @objc func checkNewFingerPrintAdded(_ callback: @escaping RCTResponseSenderBlock) {
-        callback([LAContext.biometricsChanged()])
+        if LAContext.biometricsChanged() {
+            callback(["NEW_FINGERPRINT_ADDED"])
+        }else {
+            callback(["CONTINUE"])
+        }
     }
 }
 
